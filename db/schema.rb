@@ -12,9 +12,17 @@
 
 ActiveRecord::Schema.define(:version => 20110319143805) do
 
-  create_table "payments", :force => true do |t|
+  create_table "_payments_old_20110319", :force => true do |t|
     t.string   "name"
     t.boolean  "mounthly?"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "payments", :force => true do |t|
+    t.string   "name"
+    t.boolean  "mounthly"
     t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"

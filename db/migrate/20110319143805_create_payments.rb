@@ -2,7 +2,7 @@ class CreatePayments < ActiveRecord::Migration
   def self.up
     create_table :payments do |t|
       t.string :name
-      t.boolean :mounthly?
+      t.boolean :mounthly
       t.integer :user_id
       t.timestamps
     end

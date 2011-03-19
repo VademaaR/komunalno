@@ -1,12 +1,12 @@
-<%= form_for Payment.new do |f| %>
+<%= form_for @payment do |f| %>
   <%= f.error_messages %>
   <p>
     <%= f.label :name %><br />
     <%= f.text_field :name %>
   </p>
   <p>
-    <%= f.label :mounthly? %><br />
-    <%= f.check_box :mounthly? %>
+    <%= f.label :mounthly %><br />
+    <%= f.check_box :mounthly %>
   </p>
   <p>
     <%= f.label :user_id %><br />
