@@ -1,4 +1,6 @@
 Komunalno::Application.routes.draw do
+  resources :payments
+  root :to => "payments#index"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

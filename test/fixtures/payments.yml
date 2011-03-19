@@ -1,0 +1,9 @@
+one:
+  name: MyString
+  mounthly?: false
+  user_id: 1
+
+two:
+  name: MyString
+  mounthly?: false
+  user_id: 1

@@ -1,0 +1,20 @@
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Mounthly?</th>
+    <th>User</th>
+  </tr>
+  <% for payment in @payments %>
+    <tr>
+      <td><%= payment.name %></td>
+      <td><%= payment.mounthly? %></td>
+      <td><%= payment.user_id %></td>
+      <td><%= link_to "Show", payment %></td>
+      <td><%= link_to "Edit", edit_payment_path(payment) %></td>
+      <td><%= link_to "Destroy", payment, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Payment", new_payment_path %></p>
